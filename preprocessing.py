@@ -1,6 +1,5 @@
 import tensorflow as tf
 from tensorflow.keras import datasets
-
 from tensorflow.keras import Sequential, Model, layers, initializers, regularizers, optimizers, metrics
 
 def preprocessing_data(path, main_folder, testing_folder):
