@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import image_dataset_from_directory
+from tensorflow.keras.preprocessing import image_dataset_from_directory
 
 def preprocessing_data(path, main_folder, testing_folder):
     ds_train = image_dataset_from_directory(path + main_folder + testing_folder,
