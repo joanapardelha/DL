@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 from tensorflow.keras import Sequential, Model, layers, initializers, regularizers, optimizers, metrics 
 
 def preprocessing_data(path, main_folder, testing_folder):
-    ds_train = image_dataset_from_directory(path + main_folder + testing_folder,
+    ds_train = tensorflow.keras.preprocessing.image_dataset_from_directory(path + main_folder + testing_folder,
     color_mode="rgb", batch_size=64, label_mode="binary",shuffle=True, seed=0, 
     interpolation="bilinear" )
     resize_and_rescale = Sequential([
