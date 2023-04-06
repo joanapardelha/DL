@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import datasets
-from tensorflow.keras.preprocessing import image_dataset_from_directory
-from tensorflow.keras import Sequential, Model, layers, initializers, regularizers, optimizers, metrics 
+#from tensorflow.keras.preprocessing import image_dataset_from_directory
+from tensorflow.keras import Sequential, Model, layers, initializers, regularizers, optimizers, metrics
 
 def preprocessing_data(path, main_folder, testing_folder):
     ds_train = tensorflow.keras.preprocessing.image_dataset_from_directory(path + main_folder + testing_folder,
