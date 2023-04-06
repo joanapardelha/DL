@@ -1,3 +1,6 @@
+import tensorflow as tf
+from tensorflow.keras.preprocessing.image import image_dataset_from_directory
+
 def preprocessing_data(path, main_folder, testing_folder):
     ds_train = image_dataset_from_directory(path + main_folder + testing_folder,
     color_mode="rgb", batch_size=64, label_mode="binary",shuffle=True, seed=0, 
